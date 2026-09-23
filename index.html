@@ -174,12 +174,32 @@
       max-height: 4.3in;
     }
   }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-link {
+    font-size: .82rem;
+    letter-spacing: .08em;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid #2a333c;
+    border-radius: 999px;
+    padding: 4px 12px;
+    transition: border-color .15s, color .15s;
+  }
+  .nav-link:hover { color: #fff; border-color: #59636e; }
 </style>
 </head>
 <body>
 <main class="sheet">
   <header>
-    <div class="eyebrow">Portfolio Project</div>
+    <div class="nav-bar">
+      <div class="eyebrow" style="margin-bottom:0;">Portfolio Project</div>
+      <a class="nav-link" href="scripted_cad_portfolio.html">Scripted CAD →</a>
+    </div>
     <h1>CastVR</h1>
     <div class="subtitle">CAD-to-VR Engineering Visualization Engine · C · OpenGL · OpenXR · Meta Quest 3</div>
   </header>
